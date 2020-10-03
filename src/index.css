@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#twitch-0, #twitch-1, #twitch-2, #twitch-3, #twitch-4, #twitch-5, #twitch-6, #twitch-7, #twitch-8 {
+  width: 100%;
+  height: 100%;
+}

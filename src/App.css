@@ -1,38 +1,46 @@
-.App {
+.blocks-wrapper {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.blocks-inner-wrapper {
+  display: table-row;
+  width: 100%;
+  height: 100%;
+}
+.row-1 .block:nth-child(1) {
+  background:#82FFFB;
+}
+.row-1 .block:nth-child(2) {
+  background:#FFE382;
+}
+.row-2 .block:nth-child(1) {
+  background:#E1FF83;
+}
+.row-2 .block:nth-child(2) {
+  background:#FEBD87;
+}
+.block {
+  width: 0%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+.thing-that-screws-up-layout{
+  width: 100%;
+  border: 1px solid #efefef;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  background: #fff;
+  padding-top: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#twitch-0, #twitch-1, #twitch-2, #twitch-3, #twitch-4, #twitch-5, #twitch-6, #twitch-7, #twitch-8 {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
